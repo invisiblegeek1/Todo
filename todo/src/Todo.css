@@ -13,6 +13,25 @@
   
   
   }
+  .user__input{
+    border:  solid #000;
+    border-color:none;
+    border-radius: 10px;
+    font-family:  sans-serif;
+    caret-color:rgba(0, 0, 0, 0.774);
+
+  }
+  .User__input__btn{
+    border:  solid #000;
+    border-color:none;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+
+  }
   input{
     border:  solid #000;
     border-color:none;
@@ -20,7 +39,12 @@
     font-family:  sans-serif;
     caret-color:rgba(0, 0, 0, 0.774);
   }
-  
+  input:focus{
+    outline: none;
+  }
+  button:focus{
+    outline:none;
+  }
   
   button{
     border:  solid #000;

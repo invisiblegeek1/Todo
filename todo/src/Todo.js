@@ -48,6 +48,10 @@ const Todo = () => {
   // Reamove a Specific task from Todo list
   const RemoveTask = (index) => {
     dataHandler([...data.slice(0, index), ...data.slice(index + 1)]);
+    if(data.length-1===0){
+       return ComponentUnMount();
+
+    }
     
   };
 
@@ -57,6 +61,7 @@ const Todo = () => {
         <input ref={InputTodo} className="user__input" />
 
         <button
+        className='User__input__btn'
           onClick={() => {
             AddTask();
           }}
