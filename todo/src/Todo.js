@@ -10,7 +10,7 @@ const Todo = () => {
   // Add tasks in the Todo list
   const AddTask = () => {
     dataHandler([...data, InputTodo.current.value]);
-    console.log(data);
+    
   };
 
   //update a specific task in the Todo list
@@ -48,7 +48,7 @@ const Todo = () => {
   // Reamove a Specific task from Todo list
   const RemoveTask = (index) => {
     dataHandler([...data.slice(0, index), ...data.slice(index + 1)]);
-    console.log(data);
+    
   };
 
   return (
@@ -69,10 +69,10 @@ const Todo = () => {
       <div>
         {data.map((item, index) => {
           return (
-            <div className="List__Container" id={index + 123}>
+            <div key={item + index} className="List__Container" id={index + 123}>
                 <div className='Task__Container'>
                    <p className="Task__header">{`Task ${index + 1}`}</p>
-                    <p key={item + index} className="Task__Content">{item}</p>
+                    <p  className="Task__Content">{item}</p>
 
                 </div>
               
