@@ -20,12 +20,7 @@
     font-family:  sans-serif;
     caret-color:rgba(0, 0, 0, 0.774);
   }
-  input:focus{
-    outline: none;
-  }
-  button:focus{
-    outline:none;
-  }
+  
   
   button{
     border:  solid #000;
