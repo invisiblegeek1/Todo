@@ -1,0 +1,95 @@
+.Container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 50px;
+  
+  }
+  .Todo__Input__Container{
+    display: inline;
+    margin: 20px;
+  
+  
+  }
+  input{
+    border:  solid #000;
+    border-color:none;
+    border-radius: 10px;
+    font-family:  sans-serif;
+    caret-color:rgba(0, 0, 0, 0.774);
+  }
+  input:focus{
+    outline: none;
+  }
+  button:focus{
+    outline:none;
+  }
+  
+  button{
+    border:  solid #000;
+    border-color:none;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  button:hover{
+    background-color: #000;
+    color: #fff;
+    border-color: rgba(68, 65, 65, 0.788)
+  
+  }
+  .List__Container{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: auto;
+    box-shadow: 11px 11px 22px #bebebe,-11px -11px 22px #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 50px;
+  }
+  
+  .Task__header{
+      height: 20px;
+      background-color: #000;
+      color:#fff;
+      padding: 5px;
+      border-radius: 10px;
+      width: max-content;
+  }
+  .Task__Container{
+      display: flex;
+      flex-direction: column;
+  }
+  .Task__Content{
+      width: 180px;
+      padding: 2px;
+      margin: 5px;
+      border:  solid #000;
+      border-radius: 10px;
+      background-color: #fff;
+      text-align: center;
+      font-weight: 600;
+      text-align: left;
+
+  }
+  
+  
+  .Btn__Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .Todo__Input__Container{
+      display: flex;
+      width: 300px;
+      height: fit-content;
+      padding: 10px;
+      justify-content: space-between;
+  }
+  
