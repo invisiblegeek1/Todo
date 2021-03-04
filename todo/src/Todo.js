@@ -45,7 +45,7 @@ const Todo = () => {
     );
   };
 
-  // Reamove a Specific task from Todo list
+  // Remove a Specific task from Todo list
   const RemoveTask = (index) => {
     dataHandler([...data.slice(0, index), ...data.slice(index + 1)]);
     if(data.length-1===0){
@@ -54,7 +54,7 @@ const Todo = () => {
     }
     
   };
-
+// It returns view of Todo list to the DOM 
   return (
     <div className="Container">
       <div className="Todo__Input__Container">
@@ -108,4 +108,6 @@ const Todo = () => {
     </div>
   );
 };
+
+
 export default Todo;
