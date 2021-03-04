@@ -59,11 +59,21 @@
     border-color: rgba(68, 65, 65, 0.788)
   
   }
+  .Update__btn,.Remove__Btn{
+    border:  solid #000;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+
+  }
   .List__Container{
     display: flex;
     justify-content: space-between;
     width: 300px;
-    height: auto;
+    height: fit-content;
     box-shadow: 11px 11px 22px #bebebe,-11px -11px 22px #ffffff;
     padding: 10px;
     border-radius: 20px;
@@ -83,6 +93,11 @@
       flex-direction: column;
   }
   .Task__Content{
+      display: flex;
+      flex-wrap: wrap;
+      flex-grow: inherit;
+      flex-direction: column;
+      height: auto;
       width: 180px;
       padding: 2px;
       margin: 5px;
@@ -92,6 +107,12 @@
       text-align: center;
       font-weight: 600;
       text-align: left;
+      background-color: #bebebe44;
+      font-size: 0.8rem;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      
 
   }
   

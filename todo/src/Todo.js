@@ -77,12 +77,13 @@ const Todo = () => {
             <div key={item + index} className="List__Container" id={index + 123}>
                 <div className='Task__Container'>
                    <p className="Task__header">{`Task ${index + 1}`}</p>
-                    <p  className="Task__Content">{item}</p>
+                    <div   className="Task__Content">{item}</div>
 
                 </div>
               
               <div className="Btn__Container">
                 <button
+                  className='Update__btn'
                   onClick={(e, item) => {
                     UpdateHandler(index);
                   }}
@@ -90,12 +91,12 @@ const Todo = () => {
                   Update task
                 </button>
                 <button
+                className='Remove__Btn'
                   onClick={() => {
                     RemoveTask(index);
                   }}
                 >
-                  {" "}
-                  removeitem
+                  remove item
                 </button>
               </div>
             </div>
