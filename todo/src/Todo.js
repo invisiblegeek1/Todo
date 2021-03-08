@@ -27,12 +27,13 @@ const Todo = () => {
       <div>
         <input
           id={567 + index}
+          className='Update__Input'
           placeholder={`update the task${index + 1} `}
           onChange={(e) => {
             UpdateInputHandler(e, index);
           }}
         />
-        <button onClick={ComponentUnMount}>save</button>
+        <button className='Save__Btn' onClick={ComponentUnMount}>save</button>
       </div>,
       document.getElementById("Update__Container")
     );
@@ -56,12 +57,13 @@ const Todo = () => {
   };
 // It returns view of Todo list to the DOM 
   return (
-    <div className="Container">
+    <div className="Container todo__wrapper)">
       <div className="Todo__Input__Container">
-        <input ref={InputTodo} className="user__input" />
+        <input required ref={InputTodo} className="user__input" />
 
         <button
         className='User__input__btn'
+        
           onClick={() => {
             AddTask();
           }}
